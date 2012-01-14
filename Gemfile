@@ -34,7 +34,14 @@ gem 'jquery-rails'
 group :test do
   # Pretty printed test output
   gem 'turn', '< 0.8.3'
+end
   
 gem 'will_paginate', '~> 3.0'
 
+require 'heroku'
+
+group :production do
+  gem 'pg'
+  gem 'therubyracer-heroku'
 end
+
