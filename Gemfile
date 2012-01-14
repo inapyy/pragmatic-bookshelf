@@ -38,8 +38,6 @@ end
   
 gem 'will_paginate', '~> 3.0'
 
-require 'heroku'
-
 group :production do
   gem 'pg'
   gem 'therubyracer-heroku'
