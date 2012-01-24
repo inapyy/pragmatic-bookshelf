@@ -1,0 +1,13 @@
+OrderNotifier#received
+
+Dear <%= @order.name %>
+
+Pragmaticストアでのご注文、誠にありがとうございます。
+
+あなたがご注文されたのは以下の品目です。
+
+<%= render @order.line_items %>
+
+あなたのご注文を発送する際には、別途電子メールでご連絡いたします。
+
+<%= @greeting %>, find me in app/views/app/views/order_notifier/received.text.erb
